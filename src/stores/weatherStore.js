@@ -9,7 +9,7 @@ export const useWeatherStore = defineStore('weatherStore', {
   actions: {
     async fetchWeather(city) {
       try {
-        const apiKey = 'fdb7cb25a6bb89a6debf64822c5b6a56'; 
+        const apiKey = ''; 
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
         const weatherData = response.data;
 
